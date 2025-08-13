@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Java Banking App",
+    "description": "CLI app: accounts, deposits/withdrawals, transfers, JSON persistence, JUnit tests.",
+    "tags": ["Java", "Maven", "CLI", "JSON"],
+    "repo": "https://github.com/Wayrier/java-banking-app",
+    "demo": ""
+  },
+  {
+    "title": "Python Data Processor",
+    "description": "ETL-style script demonstrating data parsing and transformation (demo project).",
+    "tags": ["Python"],
+    "repo": "https://github.com/Wayrier/Python-Project",
+    "demo": ""
+  },
+  {
+    "title": "SQL Database Demo",
+    "description": "Normalized schema, sample queries, and basic reporting (demo project).",
+    "tags": ["SQL"],
+    "repo": "https://github.com/Wayrier/SQL-Project",
+    "demo": ""
+  },
+  {
+    "title": "Web Portfolio",
+    "description": "This site—responsive, minimal, filterable projects and dark mode.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "repo": "https://github.com/Wayrier/Web-Project",
+    "demo": ""
+  }
+]
