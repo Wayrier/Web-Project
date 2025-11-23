@@ -66,7 +66,7 @@ Repo Settings → Pages → Source: main / (root)
 
 Push a commit; wait for pages build and deployment to pass
 
-Your site is live at https://wayrier.github.io/Web-Project/
+site is live at https://wayrier.github.io/Web-Project/
 
 Pages caching: if changes don’t appear, hard refresh (Ctrl/Cmd+Shift+R) or append ?v=2 to the URL.
 
