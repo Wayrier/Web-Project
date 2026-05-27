@@ -1,30 +1,30 @@
 [
   {
     "title": "Java Banking App",
-    "description": "CLI app: accounts, deposits/withdrawals, transfers, JSON persistence, JUnit tests.",
-    "tags": ["Java", "Maven", "CLI", "JSON"],
+    "description": "Objektorientierte CLI-Anwendung mit Konten, Einzahlungen, Auszahlungen, Transfers, JSON-Persistenz und JUnit-Tests.",
+    "tags": ["Java", "Maven", "CLI", "JSON", "JUnit"],
     "repo": "https://github.com/Wayrier/java-banking-app",
     "demo": ""
   },
   {
     "title": "Python Data Processor",
-    "description": "ETL-style script demonstrating data parsing and transformation (demo project).",
-    "tags": ["Python"],
-    "repo": "https://github.com/Wayrier/Python-Project",
+    "description": "ETL-/CLI-Projekt mit pandas, Filterlogik, Deduplizierung und strukturiertem Datenexport.",
+    "tags": ["Python", "pandas", "CLI", "ETL"],
+    "repo": "https://github.com/Wayrier/Python-Data-Processor",
     "demo": ""
   },
   {
     "title": "SQL Database Demo",
-    "description": "Normalized schema, sample queries, and basic reporting (demo project).",
-    "tags": ["SQL"],
-    "repo": "https://github.com/Wayrier/SQL-Project",
+    "description": "Datenbankmodellierung und Abfragen mit JOIN, GROUP BY, CTEs und Window Functions.",
+    "tags": ["SQL", "Datenbanken", "Queries"],
+    "repo": "",
     "demo": ""
   },
   {
     "title": "Web Portfolio",
-    "description": "This site—responsive, minimal, filterable projects and dark mode.",
+    "description": "Dieses Portfolio mit responsivem Layout, Projektfilter, Theme-Umschalter und aktualisiertem Online-Lebenslauf.",
     "tags": ["HTML", "CSS", "JavaScript"],
     "repo": "https://github.com/Wayrier/Web-Project",
-    "demo": ""
+    "demo": "https://wayrier.github.io/Web-Project"
   }
 ]

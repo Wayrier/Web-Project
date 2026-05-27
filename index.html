@@ -1,78 +1,152 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mohammed Afana • Portfolio</title>
-  <meta name="description" content="Fachinformatiker AE (in training). Java • Python • SQL • Web.">
-  <meta property="og:title" content="Mohammed Afana • Portfolio">
-  <meta property="og:description" content="Java • Python • SQL • Web projects & contact." />
-  <meta property="og:type" content="website" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohammed Afana | Portfolio</title>
+  <meta name="description" content="Portfolio von Mohammed Afana: Fachinformatiker für Anwendungsentwicklung, Webentwicklung, Java, Python, SQL und Datenbanken.">
+  <meta property="og:title" content="Mohammed Afana | Portfolio">
+  <meta property="og:description" content="Webentwicklung, Java, Python, SQL und aktuelle Praktikumserfahrung bei der Universität Mannheim.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="container header">
-  <a class="brand" href="#top">Mohammed Afana</a>
-  <nav class="nav">
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-    <button id="themeToggle" class="toggle" aria-label="Toggle theme">☀️</button>
-  </nav>
-</header>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
 
-<main id="top" class="container">
-  <section class="hero">
-    <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Mohammed Afana" onerror="this.style.display='none'">
-    <div>
-      <h1>Fachinformatiker Anwendungsentwicklung <span class="subtle">(in training)</span></h1>
-      <p class="lead">Java • Python • SQL • HTML/CSS/JS • Git. Currently learning web development & software engineering best practices.</p>
-      <div class="cta">
-        <a class="btn primary" href="#projects">See projects</a>
-        <a class="btn" href="mailto:wayrier@gmail.com">Email me</a>
-        <a class="btn ghost" href="https://github.com/Wayrier" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn" href="assets/Mohammed_Afana_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Hauptnavigation">
+      <a class="brand" href="#top" aria-label="Startseite">MA</a>
+      <div class="nav-links">
+        <a href="#projects">Projekte</a>
+        <a href="#cv">Lebenslauf</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Kontakt</a>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Farbschema wechseln">Light</button>
+      </div>
+    </nav>
+  </header>
 
-        <!-- Replace with your CV PDF when ready -->
-        <!-- <a class="btn" href="assets/CV_Mohammed_Afana.pdf" download>Download CV</a> -->
+  <main id="content">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="role">Fachinformatiker für Anwendungsentwicklung (IHK) - Umschüler</p>
+          <h1>Softwareentwicklung mit Fokus auf Web, Datenbanken und klare Umsetzung.</h1>
+          <p class="lead">
+            Ich bin Mohammed Afana und absolviere seit dem 21.04.2026 mein Pflichtpraktikum
+            bei der Universität Mannheim. Meine Schwerpunkte sind Webentwicklung,
+            Java, Python, SQL und praxisnahe Softwareprojekte.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">Projekte ansehen</a>
+            <a class="btn" href="lebenslauf.html">Online-Lebenslauf</a>
+            <a class="btn ghost" href="assets/Mohammed_Afana_CV.pdf" target="_blank" rel="noreferrer">CV als PDF</a>
+          </div>
+        </div>
+
+        <aside class="status-card" aria-label="Aktuelle Station">
+          <span>Aktuell</span>
+          <h2>Praktikum bei der Universität Mannheim</h2>
+          <p>Seit 21.04.2026 im Rahmen der Umschulung zum Fachinformatiker für Anwendungsentwicklung.</p>
+          <dl>
+            <div>
+              <dt>Schwerpunkt</dt>
+              <dd>Webentwicklung, Softwareentwicklung, Datenbanken</dd>
+            </div>
+            <div>
+              <dt>IHK-Ziel</dt>
+              <dd>Abschluss Winter 2026/2027</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container section" id="projects">
+      <div class="section-heading">
+        <p>Portfolio</p>
+        <h2>Ausgewählte Projekte</h2>
+      </div>
+
+      <div class="toolbar" aria-label="Projektfilter">
+        <input id="search" type="search" placeholder="Projekte suchen..." aria-label="Projekte suchen">
+        <div id="filters" class="chips" aria-label="Nach Technologie filtern"></div>
+      </div>
+
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section class="container section split" id="cv">
+      <div class="section-heading">
+        <p>Lebenslauf</p>
+        <h2>Aktualisierte CV-Version</h2>
+      </div>
+      <div class="cv-panel">
+        <p>
+          Der Lebenslauf wurde mit der neuen Praktikumsstation bei der Universität Mannheim
+          aktualisiert und ist als Online-Seite sowie als PDF verfügbar.
+        </p>
+        <div class="cta compact">
+          <a class="btn primary" href="lebenslauf.html">Online ansehen</a>
+          <a class="btn" href="assets/Mohammed_Afana_CV.pdf" target="_blank" rel="noreferrer">PDF öffnen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="skills">
+      <div class="section-heading">
+        <p>Kompetenzen</p>
+        <h2>Technologien und Arbeitsweise</h2>
+      </div>
+      <div class="skill-grid">
+        <article>
+          <h3>Programmierung</h3>
+          <ul class="chips">
+            <li>Java</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Web & Datenbanken</h3>
+          <ul class="chips">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>MySQL</li>
+            <li>SQLite</li>
+            <li>REST-Grundlagen</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Tools & Methoden</h3>
+          <ul class="chips">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+            <li>VS Code</li>
+            <li>Agile / Scrum</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Mohammed Afana</p>
+      <div class="links">
+        <a href="mailto:wayrier@gmail.com">E-Mail</a>
+        <a href="https://linkedin.com/in/afana-mohammed" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/Wayrier" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-
-    <div class="toolbar">
-      <input id="search" type="search" placeholder="Search projects…" aria-label="Search projects">
-      <div id="filters" class="chips" aria-label="Filter by tag"></div>
-    </div>
-
-    <div id="grid" class="grid" aria-live="polite"></div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="chips">
-      <li>Java</li><li>Python</li><li>SQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>Maven</li><li>JUnit</li><li>JSON (Gson)</li>
-    </ul>
-  </section>
-</main>
-
-<footer id="contact" class="footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Mohammed Afana</p>
-    <div class="links">
-      <a href="mailto:wayrier@gmail.com">Email</a>
-      <a href="https://linkedin.com/in/afana-mohammed" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a href="https://github.com/Wayrier" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
