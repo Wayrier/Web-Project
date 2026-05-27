@@ -3,150 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mohammed Afana | Portfolio</title>
-  <meta name="description" content="Portfolio von Mohammed Afana: Fachinformatiker für Anwendungsentwicklung, Webentwicklung, Java, Python, SQL und Datenbanken.">
-  <meta property="og:title" content="Mohammed Afana | Portfolio">
-  <meta property="og:description" content="Webentwicklung, Java, Python, SQL und aktuelle Praktikumserfahrung bei der Universität Mannheim.">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="refresh" content="0; url=lebenslauf.html">
+  <meta name="description" content="Online-Lebenslauf von Mohammed Afana, Fachinformatiker für Anwendungsentwicklung.">
+  <title>Mohammed Afana | Online-Lebenslauf</title>
+  <link rel="canonical" href="lebenslauf.html">
+  <style>
+    body {
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      margin: 0;
+      background: #f5f7fb;
+      color: #17202a;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    }
+
+    main {
+      width: min(520px, calc(100% - 32px));
+      padding: 28px;
+      border: 1px solid #d9e1ea;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+      text-align: center;
+    }
+
+    a {
+      color: #0b4d52;
+      font-weight: 800;
+    }
+  </style>
+  <script>
+    window.location.replace("lebenslauf.html");
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#content">Zum Inhalt springen</a>
-
-  <header class="site-header">
-    <nav class="container nav" aria-label="Hauptnavigation">
-      <a class="brand" href="#top" aria-label="Startseite">MA</a>
-      <div class="nav-links">
-        <a href="#projects">Projekte</a>
-        <a href="#cv">Lebenslauf</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Kontakt</a>
-        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Farbschema wechseln">Light</button>
-      </div>
-    </nav>
-  </header>
-
-  <main id="content">
-    <section id="top" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="role">Fachinformatiker für Anwendungsentwicklung (IHK) - Umschüler</p>
-          <h1>Softwareentwicklung mit Fokus auf Web, Datenbanken und klare Umsetzung.</h1>
-          <p class="lead">
-            Ich bin Mohammed Afana und absolviere seit dem 21.04.2026 mein Pflichtpraktikum
-            bei der Universität Mannheim. Meine Schwerpunkte sind Webentwicklung,
-            Java, Python, SQL und praxisnahe Softwareprojekte.
-          </p>
-          <div class="cta">
-            <a class="btn primary" href="#projects">Projekte ansehen</a>
-            <a class="btn" href="lebenslauf.html">Online-Lebenslauf</a>
-            <a class="btn ghost" href="assets/Mohammed_Afana_CV.pdf" target="_blank" rel="noreferrer">CV als PDF</a>
-          </div>
-        </div>
-
-        <aside class="status-card" aria-label="Aktuelle Station">
-          <span>Aktuell</span>
-          <h2>Praktikum bei der Universität Mannheim</h2>
-          <p>Seit 21.04.2026 im Rahmen der Umschulung zum Fachinformatiker für Anwendungsentwicklung.</p>
-          <dl>
-            <div>
-              <dt>Schwerpunkt</dt>
-              <dd>Webentwicklung, Softwareentwicklung, Datenbanken</dd>
-            </div>
-            <div>
-              <dt>IHK-Ziel</dt>
-              <dd>Abschluss Winter 2026/2027</dd>
-            </div>
-          </dl>
-        </aside>
-      </div>
-    </section>
-
-    <section class="container section" id="projects">
-      <div class="section-heading">
-        <p>Portfolio</p>
-        <h2>Ausgewählte Projekte</h2>
-      </div>
-
-      <div class="toolbar" aria-label="Projektfilter">
-        <input id="search" type="search" placeholder="Projekte suchen..." aria-label="Projekte suchen">
-        <div id="filters" class="chips" aria-label="Nach Technologie filtern"></div>
-      </div>
-
-      <div id="grid" class="grid" aria-live="polite"></div>
-    </section>
-
-    <section class="container section split" id="cv">
-      <div class="section-heading">
-        <p>Lebenslauf</p>
-        <h2>Aktualisierte CV-Version</h2>
-      </div>
-      <div class="cv-panel">
-        <p>
-          Der Lebenslauf wurde mit der neuen Praktikumsstation bei der Universität Mannheim
-          aktualisiert und ist als Online-Seite sowie als PDF verfügbar.
-        </p>
-        <div class="cta compact">
-          <a class="btn primary" href="lebenslauf.html">Online ansehen</a>
-          <a class="btn" href="assets/Mohammed_Afana_CV.pdf" target="_blank" rel="noreferrer">PDF öffnen</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="container section" id="skills">
-      <div class="section-heading">
-        <p>Kompetenzen</p>
-        <h2>Technologien und Arbeitsweise</h2>
-      </div>
-      <div class="skill-grid">
-        <article>
-          <h3>Programmierung</h3>
-          <ul class="chips">
-            <li>Java</li>
-            <li>Python</li>
-            <li>PHP</li>
-            <li>SQL</li>
-            <li>JavaScript</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Web & Datenbanken</h3>
-          <ul class="chips">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>MySQL</li>
-            <li>SQLite</li>
-            <li>REST-Grundlagen</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Tools & Methoden</h3>
-          <ul class="chips">
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Docker</li>
-            <li>VS Code</li>
-            <li>Agile / Scrum</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+  <main>
+    <h1>Online-Lebenslauf wird geöffnet</h1>
+    <p>Falls die Weiterleitung nicht automatisch startet: <a href="lebenslauf.html">Lebenslauf öffnen</a>.</p>
   </main>
-
-  <footer id="contact" class="footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Mohammed Afana</p>
-      <div class="links">
-        <a href="mailto:wayrier@gmail.com">E-Mail</a>
-        <a href="https://linkedin.com/in/afana-mohammed" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/Wayrier" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

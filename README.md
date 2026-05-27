@@ -1,13 +1,11 @@
 # Mohammed Afana Portfolio
 
-Modernes Web-Portfolio mit Projektübersicht, Kontaktlinks und aktualisiertem Lebenslauf.
+Online-Lebenslauf von Mohammed Afana.
 
 ## Inhalt
 
-- responsive Startseite mit aktuellem Praktikum bei der Universität Mannheim
-- filterbare Projektkarten aus `projects.json`
-- Light-/Dark-Theme per JavaScript
-- Online-Lebenslauf unter `lebenslauf.html`
+- Startseite leitet direkt auf `lebenslauf.html` weiter
+- responsiver Online-Lebenslauf mit aktueller Praktikumsstation bei der Universität Mannheim
 - PDF-Lebenslauf unter `assets/Mohammed_Afana_CV.pdf`
 
 ## Technologien
@@ -19,7 +17,7 @@ Modernes Web-Portfolio mit Projektübersicht, Kontaktlinks und aktualisiertem Le
 
 ## Lokal starten
 
-Das Projekt ist statisch. Du kannst `index.html` direkt im Browser öffnen.
+Das Projekt ist statisch. Du kannst `index.html` direkt im Browser öffnen; es leitet automatisch auf den Online-Lebenslauf weiter.
 
 Wenn `fetch("projects.json")` im Browser blockiert wird, starte einen kleinen lokalen Server:
 
@@ -40,9 +38,6 @@ http://localhost:8080
 ├── index.html
 ├── lebenslauf.html
 ├── lebenslauf.css
-├── projects.json
-├── script.js
-├── styles.css
 └── assets/
     ├── Mohammed_Afana_CV.pdf
     └── avatar.jpg
